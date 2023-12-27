@@ -7,7 +7,7 @@
 </script>
 
 <Header />
-<main class="bg-slate-300">
+<main class="bg-slate-300 p-4 min-h-[80vh]">
 	<slot />
 </main>
 <Footer />

@@ -1,8 +1,13 @@
 <script>
-	import Header from '../components/Header.svelte';
-	import Footer from '../components/Footer.svelte';
+	// Tailwind directives
+	import '../app.css';
+
+	import Header from '$lib/components/Header.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 </script>
 
 <Header />
-<slot />
+<main class="bg-slate-300">
+	<slot />
+</main>
 <Footer />

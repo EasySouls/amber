@@ -12,7 +12,11 @@ export default {
 			amber: colors.amber,
 			teal: colors.teal
 		},
-		extend: {}
+		extend: {
+			colors: {
+				primary: '#fb8500'
+			}
+		}
 	},
 	plugins: []
 };

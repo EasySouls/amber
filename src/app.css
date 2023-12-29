@@ -4,6 +4,18 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-	font-family: 'Barlow Condensed', sans-serif;
+@layer base {
+	html {
+		@apply h-full;
+	}
+	body {
+		@apply flex flex-col min-h-full;
+		font-family: 'Barlow Condensed', sans-serif;
+	}
+	h1 {
+		@apply text-2xl;
+	}
+	h2 {
+		@apply text-xl;
+	}
 }

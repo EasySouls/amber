@@ -7,7 +7,13 @@
 </script>
 
 <Header />
-<main class="bg-slate-300 p-4 min-h-[80vh]">
+<main class="bg-slate-300 p-4">
 	<slot />
 </main>
 <Footer />
+
+<style lang="postcss">
+	main {
+		@apply overflow-scroll flex-auto;
+	}
+</style>

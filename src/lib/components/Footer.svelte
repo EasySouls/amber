@@ -4,6 +4,6 @@
 
 <style lang="postcss">
 	footer {
-		@apply p-4 flex bg-slate-700;
+		@apply p-4 flex bg-slate-700 mt-auto;
 	}
 </style>

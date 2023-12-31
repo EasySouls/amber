@@ -7,6 +7,7 @@ import { PrismaAdapter } from '@auth/prisma-adapter';
 import prisma from '$lib/prisma';
 
 import {
+	AUTH_SECRET,
 	GITHUB_ID_DEV,
 	GITHUB_SECRET_DEV,
 	GOOGLE_CLIENT_ID,
@@ -18,5 +19,7 @@ export const handleAuth = SvelteKitAuth({
 	providers: [
 		Google({ clientId: GOOGLE_CLIENT_ID, clientSecret: GOOGLE_CLIENT_SECRET }),
 		Github({ clientId: GITHUB_ID_DEV, clientSecret: GITHUB_SECRET_DEV })
-	]
+	],
+	trustHost: true,
+	secret: AUTH_SECRET
 });

@@ -1,5 +1,5 @@
 import { PrismaClient } from '@prisma/client';
-import { seedUsers } from '../src/lib/seedData';
+import seedUsers from '../src/lib/seedData.json' assert { type: 'json' };
 
 const prisma = new PrismaClient();
 

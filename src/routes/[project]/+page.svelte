@@ -5,11 +5,10 @@
 </script>
 
 <svelte:head>
-	<title>{data.team.name} - Amber</title>
+	<title>{data.project.name} - Amber</title>
 </svelte:head>
 
 <div>
-	<h3>{data.team.name}</h3>
-	<p>Projects: {data.team.projects}</p>
-	<p>Issues: {data.team.issues}</p>
+	<h3>{data.project.name}</h3>
+	<p>Issues: {data.project.issues}</p>
 </div>
